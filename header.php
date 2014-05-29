@@ -48,7 +48,7 @@ else
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="">Paste</a>
+	      <a class="navbar-brand" href="./">Paste</a>
 	    </div>
 	    <div class="navbar-collapse collapse" collapse="hasNavbar">
 	      <ul class="nav navbar-nav">
