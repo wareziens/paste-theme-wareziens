@@ -1,11 +1,15 @@
 paste-theme-wareziens
 =====================
 
-https://github.com/adaur/Paste theme for http://wareziens.net
+[Paste](https://github.com/adaur/Paste) theme for [Wareziens](http://wareziens.net) bring to you buy [@soyuka](http://github.com/soyuka) and [@adaur](http://github.com/adaur)!
+
+Build on Bootstrap 3 and angularjs
 
 #Installation
 
 Clone this into the templates directory.
+
+Run this to compile sources:
 
 ```
 npm install && bower install && gulp
@@ -13,11 +17,16 @@ npm install && bower install && gulp
 
 #Development
 
-```
-gulp watch
-```
+To compile on-the-fly run `gulp watch`.
 
 Bootstrap settings can be overriden in `scss/_settings`
+
+#Todo
+- Recaptcha (main.php)
+- Search
+- Trends (trends.php)
+- Add highlight pasted lines back in (removed temporarly)
+- modal.php_ - handle users, sign in etc.
 
 #Configuration
 
