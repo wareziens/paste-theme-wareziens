@@ -1,0 +1,48 @@
+@import "bootstrap/mixins";
+// Brand colors
+// -------------------------
+$brand-primary:         #c0392b;
+$brand-success:         #5bb75b;
+$brand-warning:         #faa732;
+$brand-danger:          #fc5b5e;
+$brand-info:            #3a87ad;
+
+@import "bootstrap/variables";
+
+$gray-darker:            darken(#c6c6c6, 13.5%); // #222
+$gray-dark:              darken(#c6c6c6, 20%);   // #333
+$gray:                   darken(#c6c6c6, 33.5%); // #555
+$gray-light:             darken(#c6c6c6, 60%);   // #999
+$gray-lighter:           darken(#c6c6c6, 93.5%); // #eee
+
+
+// Scaffolding
+// -------------------------
+
+$body-bg:               #2f2f2f;
+$text-color:            $gray-light;
+
+// Links
+// -------------------------
+
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%);
+
+$component-active-color:         #fff;
+$component-active-bg:            $brand-primary;
+
+// Badges
+// -------------------------
+$badge-color:                 #fff !default;
+$badge-link-hover-color:      #fff !default;
+$badge-bg:                    $gray-light !default;
+
+$badge-active-color:          $link-color !default;
+$badge-active-bg:             #fff !default;
+
+$badge-font-weight:           bold !default;
+$badge-line-height:           1 !default;
+$badge-border-radius:         10px !default;
+
+
+@import "bootstrap/bootstrap";

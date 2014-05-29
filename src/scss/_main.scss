@@ -1,0 +1,38 @@
+.paster textarea {
+	min-height: 350px;
+}
+
+body {
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+// .panel > .btn-group > a.btn:first-child {
+// 	@include border-left-radius(0);
+// }
+// .panel > .btn-group > a.btn:last-child {
+// 	@include border-bottom-radius(0);
+// }
+
+.panel-body pre {
+	margin-top: 30px;
+	position: relative;
+}
+
+.panel-body pre .code-header {
+	position: absolute;
+	display: block;
+	top:12.5px;
+	right:12.5px;
+	font-weight: bold;
+	color:#ccc;
+}
+
+.active .text-muted {
+	color: $gray-darker;
+}
+
+footer {
+	text-align: center;
+	color: $gray-darker;
+}
