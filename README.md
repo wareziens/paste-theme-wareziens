@@ -5,7 +5,7 @@ paste-theme-wareziens
 
 Built on Bootstrap 3 and angularjs
 
-![Paste wareziens template](https://github.com/wareziens/paste-theme-wareziens/blob/master/screen.png)
+![Paste wareziens template](https://raw.githubusercontent.com/wareziens/paste-theme-wareziens/master/screen.png)
 
 #Installation
 
