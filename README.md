@@ -3,7 +3,9 @@ paste-theme-wareziens
 
 [Paste](https://github.com/adaur/Paste) theme for [Wareziens](http://wareziens.net) bring to you buy [@soyuka](http://github.com/soyuka) and [@adaur](http://github.com/adaur)!
 
-Build on Bootstrap 3 and angularjs
+Built on Bootstrap 3 and angularjs
+
+![Paste wareziens template](https://github.com/wareziens/paste-theme-wareziens/blob/master/screen.png)
 
 #Installation
 
