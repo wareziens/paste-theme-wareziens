@@ -36,3 +36,10 @@ footer {
 	text-align: center;
 	color: $gray-darker;
 }
+
+table {
+	width:90%; 
+	margin: 0 auto;
+}
+
+.ng-table th.sortable.sort-desc, .ng-table th.sortable.sort-asc { background-color: $gray-dark;color:#fff;text-shadow:none!important; }
