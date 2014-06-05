@@ -7,6 +7,7 @@ var gulp = require('gulp')
   , bower = require('gulp-bower-files')
   , filter = require('gulp-filter')
   , sass = require('gulp-sass')
+  , debug = require('gulp-debug')
   , add = require('gulp-add-src')
 
 var paths = {
@@ -16,7 +17,11 @@ var paths = {
 
 gulp.task('bower', function() {
   bower()
-		.pipe(filter('!*.css'))
+
+		// .pipe(debug({verbose: true}))
+		.pipe(filter(function (file) {
+			return require('path').extname(file.path) === '.js'
+		}))
 		// .pipe(add('bower_components/modernizr/modernizr.js'))
 		.pipe(concat('vendor.js'))
 		// .pipe(uglify())
@@ -28,6 +33,9 @@ gulp.task('bootstrap', function() {
 	.pipe(gulp.dest('./src/scss/bootstrap'))
 	gulp.src('bower_components/bootstrap-sass/dist/fonts/*')
 	.pipe(gulp.dest('./dist/fonts'))
+	gulp.src('bower_components/ng-table/ng-table.css')
+	.pipe(rename('_ng-table.scss'))
+	.pipe(gulp.dest('./src/scss'))
 })
 
 gulp.task('scripts', function() {
