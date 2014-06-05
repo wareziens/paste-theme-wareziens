@@ -1,4 +1,9 @@
 <?php
+if($page['trends'] && $_GET['json'] == true) {
+  echo json_encode($page['trends']);
+  die();
+}
+
 //replacing some variables 
 if($CONF['language'] == 'french')
 	//the dude that has developped that didn't knew about <meta charset="utf-8">...
