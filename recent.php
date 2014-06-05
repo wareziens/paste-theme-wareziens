@@ -19,7 +19,7 @@
 							<small class="text-muted">&lt; &gt;</small> 
 							<?php echo $entry['title']; ?> 
 
-							<span class="badge"><?php echo $entry['agefmt'];?></span>
+							<span class="label label-info"><?php echo $entry['agefmt'];?></span>
 						</a>
 					<?php } ?>
 		  </div>
