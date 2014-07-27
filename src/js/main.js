@@ -52,6 +52,7 @@ angular.module('paste', ['ui.bootstrap', 'ngClipboard', 'ngTable'])
 			    		data[i].hits = parseFloat(data[i].hits)
 			    		data[i].age = parseFloat(data[i].age)
 			    		data[i].pid = parseFloat(data[i].pid)
+			    		data[i].expires = data[i].expires ? $filter('date')(new Date(data[i].expires), 'dd/MM/yyyy HH:mm') : 'Never'
 			    		console.log(data[i])
 			    	}
 

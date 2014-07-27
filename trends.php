@@ -1,7 +1,9 @@
 
 <?php
 if($page['trends']) {
-  ?>
+
+  $baseurl = $mod_rewrite == true ? $CONF['url'] : $CONF['url'] .'paste.php?paste=';
+?>
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 ">
@@ -10,7 +12,7 @@ if($page['trends']) {
         <h3 class="panel-title"><i class="glyphicon glyphicon-stats"></i> <?php echo $lang['Trends'] ?></h3>
       </div>
       <div class="panel-body"></div>
-      <table id="trends" ng-controller="trendCtrl" ng-table="tableParams" class="display" cellspacing="0" width="100%">
+      <table id="trends" class="table-striped" ng-controller="trendCtrl" ng-table="tableParams">
 
         <tbody>
           <tr ng-repeat="paste in $data">
@@ -18,10 +20,13 @@ if($page['trends']) {
             {{paste.pid}} 
             </td>
             <td data-title="'Name'" sortable="'title'">
-              {{paste.title}} <div class="label label-info">{{paste.format}}</div>
+              <a href="<?php echo $baseurl; ?>{{paste.pid}}">{{paste.title}}</a> <div class="label label-info">{{paste.format}}</div>
             </td>
             <td data-title="'Hits'" sortable="'hits'">
               {{paste.hits}}
+            </td>
+            <td data-title="'Expires'" sortable="'expires'">
+              {{paste.expires}}
             </td>
             <td data-title="'Date'" sortable="'age'">
               {{paste.agefmt}}
